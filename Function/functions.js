@@ -1,4 +1,5 @@
 (function () {
+  console.log(arguments);
   this.name = "Pellegrino";
 
   function getName() {
@@ -14,4 +15,4 @@
   };
   console.log(user.getName());
   console.log(user.getNameArrowFn());
-})();
+})(1, "nome", 3);
